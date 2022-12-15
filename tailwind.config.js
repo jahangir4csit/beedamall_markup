@@ -13,7 +13,10 @@ module.exports = {
           tertiary: '#979797',
           neonblue: '#CED7FF',
           gray: '#2F2F2F',
+          light: '#f2f3f8',
           link: '#2F80ED',
+          success: '#04C600',
+          
         }
       }
     }

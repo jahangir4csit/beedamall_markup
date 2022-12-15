@@ -4,8 +4,12 @@
 
 @layer components{
     /* == Group Utilities === */
-    .btn-buy{
-        @apply bg-black rounded-md text-white px-3 py-2 shadow-sm block hover:bg-stone-500;
+    .btn_add_cart{
+        background-image: url('../public/img/icons/plus.svg');
+        @apply w-6 h-6 bg-center bg-no-repeat bg-contain
+    }
+    .btn_add_cart_hover{
+        background-image: url('../public/img/icons/plus_active.svg');
     }
 }
 
@@ -50,7 +54,10 @@
     .icon-cart.active{
         background-image: url('../public/img/icons/cart_icon_active.svg');
     }
-    .btn-cat i{
+    .show.btn-cat{
+        @apply bg-beeda-primary text-white
+    }
+    .show.btn-cat i,.btn-cat:hover i{
         background-image: url('../public/img/icons/categories_toggle_icon_hover.png');
     }
     .dropdown-cat-menu.show{
@@ -65,6 +72,9 @@
     }
     ul.dropdown-cat-menu-items li:hover .sub-mega-cat{
         display: block;
+    }
+    .section_title{
+        @apply py-3 font-bold text-xl text-beeda-neutral
     }
 
 }

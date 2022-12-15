@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="min-h-screen">
+<body class="min-h-screen bg-beeda-light">
     <header>
         <div class="topbar">
             <img class="object-cover w-full" src="img/topbar.gif" alt="topbar">
@@ -30,7 +30,7 @@
                         data-bs-toggle="dropdown"
                         aria-expanded="false" 
                         class="dropdown-toggle inline-flex items-center justify-center rounded-xl border 
-                        border-transparent bg-white px-3 py-1.5 text-beeda-primary font-medium hover:bg-beeda-primary hover:text-white hover:btn-cat btn-animation
+                        border-transparent bg-white px-3 py-1.5 text-beeda-primary font-medium hover:bg-beeda-primary hover:text-white btn-cat btn-animation
                         ">
                             <i class="bg-caticon bg-no-repeat bg-center mr-2"></i>
                             Categories
@@ -194,6 +194,65 @@
                         </span>
                     </label>
 
+                    <!-------- @User Profile nav--------->
+                    <div class="flex justify-center hidden">
+                        <div>
+                            <div class="dropdown relative">
+                                <button type="button" class="flex items-center rounded-full text-sm focus:outline-none dropdown-toggle" id="user-menu-button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="h-8 w-8 rounded-full mr-2" src="./img/avatar-place.png" alt="user">
+                                    <span class=" w-3 h-2 bg-no-repeat bg-center bg-contain bg-[url('./img/icons/user_down.svg')]"></span>
+                                </button>
+                                <div class="min-w-max hidden absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-3 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dropdown-menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
+                                    <a href="#" class="flex items-center gap-x-3 px-4 py-2 text-sm dropdown-item">
+                                        <div class="rounded-full flex items-center justify-center w-8 h-8 bg-beeda-primary/10">
+                                            <img src="./img/icons/dashboard.svg" alt="dashboard" />
+                                        </div>
+                                        <span class="text-base text-beeda-neutral hover:text-beeda-primary">Dashboard</span> 
+                                    </a>
+                                    <a href="#" class="flex items-center px-4 py-2 text-sm gap-x-3 dropdown-item">
+                                        <div class="rounded-full flex items-center justify-center w-8 h-8 bg-beeda-primary/10">
+                                            <img src="./img/icons/profile.svg" alt="dashboard" />
+                                        </div>
+                                        <span class="text-base text-beeda-neutral hover:text-beeda-primary">My Profile</span> 
+                                    </a>
+                                    <a href="#" class="flex items-center px-4 py-2 text-sm gap-x-3 dropdown-item">
+                                        <div class="rounded-full flex items-center justify-center w-8 h-8 bg-beeda-primary/10">
+                                            <img src="./img/icons/wallet.svg" alt="dashboard" />
+                                        </div>
+                                        <span class="text-base text-beeda-neutral hover:text-beeda-primary">Wallet</span> 
+                                    </a>
+                                    <a href="#" class="flex items-center px-4 py-2 text-sm gap-x-3 dropdown-item">
+                                        <div class="rounded-full flex items-center justify-center w-8 h-8 bg-beeda-primary/10">
+                                            <img src="./img/icons/order_history.svg" alt="dashboard" />
+                                        </div>
+                                        <span class="text-base text-beeda-neutral hover:text-beeda-primary">Order History</span> 
+                                    </a>
+                                    <a href="#" class="flex items-center px-4 py-2 text-sm gap-x-3 dropdown-item">
+                                        <div class="rounded-full flex items-center justify-center w-8 h-8 bg-beeda-primary/10">
+                                            <img src="./img/icons/favourite.svg" alt="dashboard" />
+                                        </div>
+                                        <span class="text-base text-beeda-neutral hover:text-beeda-primary">Favourites</span> 
+                                    </a>
+                                    <a href="#" class="flex items-center px-4 py-2 text-sm gap-x-3 dropdown-item">
+                                        <div class="rounded-full flex items-center justify-center w-8 h-8 bg-beeda-primary/10">
+                                            <img src="./img/icons/reviews.svg" alt="dashboard" />
+                                        </div>
+                                        <span class="text-base text-beeda-neutral hover:text-beeda-primary">My Reviews</span> 
+                                    </a>
+                                    <a href="#" class="flex items-center px-4 py-2 text-sm gap-x-3 dropdown-item">
+                                        <div class="rounded-full flex items-center justify-center w-8 h-8 bg-beeda-primary/10">
+                                            <img src="./img/icons/logout.svg" alt="dashboard" />
+                                        </div>
+                                        <span class="text-base text-beeda-neutral hover:text-beeda-primary">Log Out</span> 
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------- End User Profile nav--------->
+
                     <a href="#" class="flex items-center min-w-max">
                         <i class="icon icon-store h-11 w-11 mr-1 max-[768px]:mr-0"></i>
                         <span class="leading-4 text-beeda-primary font-medium max-[768px]:hidden">Sell on<br>Beeda</span>
@@ -235,8 +294,8 @@
         </nav> 
     </header>
     <main>
-        <!---------Start Main Slider -------------->
-        <section class="overflow-hidden">
+        <!---------@Main Slider -------------->
+        <section class="overflow-hidden mb-1">
             <div class="xl:container xl:px-0 lg:px-3 mx-auto">
                 <div class="flex lg:flex-row md:flex-col py-1 md:gap-1">
                     <div class="flex flex-wrap lg:w-2/3 min-[640px]:w-full">
@@ -257,7 +316,617 @@
                 </div>
             </div>
         </section>
-        <!---------End Main Slider -------------->
+        <!--------- End Main Slider -------------->
+        <!--------- @Todays Deal ----------------->
+        <div class="mb-2 overflow-hidden">
+            <div class="xl:container mx-auto bg-white pt-2 pb-3 px-4 xl:px-3 max-[1024px]:px-3 rounded-b">
+                <div class="border-b mb-4">
+                    <h2 class="section_title uppercase">TODAYS DEALS</h2>
+                </div>
+                <div class="mt-5 grid grid-cols-1 gap-y-2 gap-x-2 max-[640px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 xl:gap-x-2">
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                </div>
+            </div>
+          </div>
+        <!----------End Todays Deal --------------->
+        <!--------- @Recomended ----------------->
+        <div class="mb-2 overflow-hidden">
+            <div class="xl:container mx-auto bg-white pt-2 pb-3 px-4 xl:px-3 max-[1024px]:px-3 rounded-b">
+                <div class="border-b mb-4">
+                    <h2 class="section_title uppercase">RECOMMENDED</h2>
+                </div>
+                <div class="mt-5 grid grid-cols-1 gap-y-2 gap-x-2 max-[640px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 xl:gap-x-2">
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                    <!------ @product ------->
+                    <div class="group relative border rounded-md">
+                        <a class=" block" href="#">
+                            <div class="min-h-min aspect-w-1 aspect-h-1 w-full overflow-hidden bg-white lg:aspect-none lg:h-52">
+                                <img src="img/sample/product.webp" alt="Front of Basic Tee in black" class="h-full w-full object-scale-down object-center lg:h-full lg:w-full">
+                            </div>
+                        </a>
+                        <div class="p-4 w-full overflow-hidden block divide-y">
+                            <div class="pb-4">
+                                <h3 class="text-sm text-beeda-neutral leading-8 truncate">
+                                    <a href="#">
+                                        ASUS ROG Maximus Z690 Formula(WiFi 6E)LGA1700(Intel 12th Gen)ATX Water cooling gaming motherboard(PCIe 5.0,DDR5,20+1 power stages,LiveDash 2”OLED,5xM.2,2xThunderbolt?4,PCIe 5.0 Hyper M.2 Card bundled
+                                    </a>
+                                </h3>
+                                <div>
+                                    <div class="flex items-center">
+                                        <div class="flex items-center">
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                            <svg class="text-beeda-inverted h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                        <a href="#" class="ml-1 text-sm font-medium text-beeda-tertiary hover:text-beeda-link">(0)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <div>
+                                    <div class="flex flex-col">
+                                        <p class="text-xs font-light text-beeda-tertiary line-through">$1236.56</p>
+                                        <p class="text-md font-bold text-beeda-success leading-4">$986.56</p>
+                                    </div>
+                                </div>
+                                <button class="btn_add_cart hover:btn_add_cart_hover hover:animate-pulse"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- End product ----->
+                </div>
+            </div>
+            </div>
+        <!----------End Recomended --------------->
     </main>
 
     <footer>
@@ -679,6 +1348,38 @@
                 </div>
             </div>
         </section>
+        <div class="container-fluid relative mt-[84px] hidden max-[840px]:block">
+            <div class="fixed bottom-0 left-0 right-0 p-4 bg-[#F1F3FF]">
+                <nav class="relative flex justify-around items-center">
+                    <div>
+                        <a href="#" class="flex justify-center items-center flex-col">
+                            <i class="w-[28px] h-[28px] bg-no-repeat bg-center bg-contain bg-[url('./img/icons/home_icon.svg')]"></i>
+                            <p class="text-beeda-primary">Home</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="flex justify-center items-center flex-col">
+                            <i class="w-[28px] h-[28px] bg-no-repeat bg-center bg-contain bg-[url('./img/icons/category_icon.svg')]"></i>
+                            <p class="text-beeda-primary">Category</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="flex justify-center items-center flex-col">
+                            <div class=" relative w-[28px] h-[28px] bg-no-repeat bg-center bg-contain bg-[url('./img/icons/cart_icon.svg')]">
+                                <span class="inline-flex absolute -top-2 -right-1 justify-center items-center w-5 h-5 text-[10px] text-white bg-beeda-primary rounded-full">15</span>
+                            </div>
+                            <p class="text-beeda-primary">Cart</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="flex justify-center items-center flex-col">
+                            <i class="w-[35px] h-[28px] bg-no-repeat bg-center bg-contain bg-[url('./img/icons/topup.gif')]"></i>
+                            <p class="text-beeda-primary">Top-Up</p>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </footer>
     <script src="./js/main.js"></script>
     <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
