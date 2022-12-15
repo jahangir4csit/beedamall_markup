@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    /* == Group Utilities === */
+    .btn-buy{
+        @apply bg-black rounded-md text-white px-3 py-2 shadow-sm block hover:bg-stone-500;
+    }
+}
+
+@layer base{
+    html, body {
+        font-family: 'Poppins', sans-serif;
+    }
+    hr{
+        border-color: rgb(226,229,236, 0.3) !important;
+    }
+    h1{
+        @apply text-2xl
+    }
+    b, strong {
+        @apply font-medium;
+    }
+}
+
+@layer utilities{
+    .bg-caticon{
+        width: 30px;
+        height: 30px;
+        background-image: url('../public/img/icons/categories_toggle_icon.png');
+    }
+    .btn-animation{
+        @apply transition ease-in-out duration-300
+    }
+    .icon{
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .icon-search{
+        background-image: url('../public/img/icons/search.svg');
+    }
+    .icon-store{
+        background-image: url('../public/img/icons/store.svg');
+    }
+    .icon-cart{
+        background-image: url('../public/img/icons/cart_icon.svg');
+    }
+    .icon-cart.active{
+        background-image: url('../public/img/icons/cart_icon_active.svg');
+    }
+    .btn-cat i{
+        background-image: url('../public/img/icons/categories_toggle_icon_hover.png');
+    }
+    .dropdown-cat-menu.show{
+        transform: translate(0px, 56px)!important;
+    }
+    .sub-mega-cat{
+        width: 48vw;
+        height: 51.8vh;
+    }
+    .dropdown-cat-menu-items li a:hover img{
+        opacity: 1;
+    }
+    ul.dropdown-cat-menu-items li:hover .sub-mega-cat{
+        display: block;
+    }
+
+}
+
+
